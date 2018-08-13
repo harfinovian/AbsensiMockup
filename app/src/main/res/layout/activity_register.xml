@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Name Label -->
+        <EditText android:id="@+id/full_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/white"
+            android:hint="Nama Lengkap" />
+
+        <TextView
+            android:id="@+id/date_error_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/padding_small"/>
+
+        <!--  Email Label -->
+        <EditText android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/white"
+            android:hint="Tanggal Lahir" />
+
+        <TextView
+            android:id="@+id/full_name_error_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/padding_small"/>
+
+
+        <EditText android:id="@+id/input_tmpt_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:backgroundTint="@color/white"
+            android:hint="Tempat Lahir" />
+
+        <TextView
+            android:id="@+id/email_error_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/padding_small"/>
+
+        <!-- mobile number -->
+        <EditText android:id="@+id/input_nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:hint="NIK"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/telepon_error_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/padding_small"/>
+
+        <!-- Password Label -->
+        <EditText android:id="@+id/input_perusahaan_lama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:backgroundTint="@color/white"
+            android:hint="Asal Perusahaan" />
+
+        <TextView
+            android:id="@+id/phone_error_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/padding_small"/>
+
+        <!-- Password Re-enter Label -->
+        <EditText android:id="@+id/input_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:backgroundTint="@color/white"
+            android:hint="Nomor HP" />
+
+        <TextView
+            android:id="@+id/password_error_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/padding_small"/>
+
+        <EditText android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/white"
+            android:hint="Email Address" />
+
+        <TextView
+            android:id="@+id/repass_error_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/padding_small"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:textAllCaps="false"
+            android:text="Daftar"
+            android:textSize="16dip"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/signup_error_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/padding_small"/>
+
+        <TextView android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Sudah punya akun? Masuk disini"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16dip"/>
+
+    </LinearLayout>
+</ScrollView>
