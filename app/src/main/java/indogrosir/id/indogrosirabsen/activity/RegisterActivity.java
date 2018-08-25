@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import butterknife.BindView;
-import indogrosir.id.indogrosirabsen.LoginActivity;
+import butterknife.ButterKnife;
 import indogrosir.id.indogrosirabsen.R;
 import indogrosir.id.indogrosirabsen.base.BaseActivity;
 
@@ -16,6 +16,7 @@ public class RegisterActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        ButterKnife.bind(this);
 
         linkLogin.setOnClickListener(v -> {
             openNewActivity(LoginActivity.class);

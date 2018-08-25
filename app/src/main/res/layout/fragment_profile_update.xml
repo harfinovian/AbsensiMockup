@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Data Diri"
+            android:textSize="@dimen/large_margin"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="@dimen/large_margin"/>
+
+        <!-- Name Label -->
+        <EditText android:id="@+id/full_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/input_text_edt_white"
+            android:hint="Nama Lengkap" />
+
+        <EditText android:id="@+id/input_nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/input_text_edt_white"
+            android:hint="NIK"
+            android:text=""/>
+
+        <!--  Email Label -->
+        <EditText android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/input_text_edt_white"
+            android:hint="Tanggal Lahir" />
+
+
+        <EditText android:id="@+id/input_tmpt_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/input_text_edt_white"
+            android:hint="Tempat Lahir" />
+
+        <!-- Password Label -->
+        <EditText android:id="@+id/input_perusahaan_lama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/input_text_edt_white"
+            android:hint="Asal Perusahaan" />
+
+        <EditText android:id="@+id/input_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/input_text_edt_white"
+            android:hint="Nomor HP" />
+
+
+        <EditText android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:padding="@dimen/padding_small"
+            android:background="@drawable/input_text_edt_white"
+            android:hint="Email Address" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_udpate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:text="Simpan Perubahan"
+            android:textSize="16dip"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+</ScrollView>

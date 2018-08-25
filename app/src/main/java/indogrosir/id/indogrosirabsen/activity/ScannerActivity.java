@@ -65,13 +65,10 @@ public class ScannerActivity extends BaseActivity implements ZXingScannerView.Re
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                             if (shouldShowRequestPermissionRationale(CAMERA)) {
                                 showMessageOKCancel("You need to allow access to both the permissions",
-                                        new DialogInterface.OnClickListener() {
-                                            @Override
-                                            public void onClick(DialogInterface dialog, int which) {
-                                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                                    requestPermissions(new String[]{CAMERA},
-                                                            REQUEST_CAMERA);
-                                                }
+                                        (dialog, which) -> {
+                                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                                                requestPermissions(new String[]{CAMERA},
+                                                        REQUEST_CAMERA);
                                             }
                                         });
                                 return;

@@ -1,6 +1,5 @@
-package indogrosir.id.indogrosirabsen;
+package indogrosir.id.indogrosirabsen.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -8,6 +7,7 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import indogrosir.id.indogrosirabsen.R;
 import indogrosir.id.indogrosirabsen.base.BaseActivity;
 
 public class LoginActivity extends BaseActivity {
@@ -24,7 +24,7 @@ public class LoginActivity extends BaseActivity {
         ButterKnife.bind(this);
 
         loginBtn.setOnClickListener(v -> login());
-//        signupLink.setOnClickListener(view -> { openNewActivity(SignupActivity.class); });
+        signupLink.setOnClickListener(view -> { openNewActivity(RegisterActivity.class); });
     }
 
     public void login() {
@@ -43,7 +43,7 @@ public class LoginActivity extends BaseActivity {
                 () -> {
                     // On complete call either onLoginSuccess or onLoginFailed
                     onLoginSuccess();
-                }, 3000);
+                }, 1000);
     }
 
     public boolean validate() {

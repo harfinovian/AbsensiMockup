@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saran"
+            android:textSize="@dimen/large_margin"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="@dimen/large_margin"/>
+
+        <!-- Name Label -->
+        <EditText android:id="@+id/full_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:inputType="textMultiLine"
+            android:background="@drawable/input_text_edt_white"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:text="Klik Disini"
+            android:textSize="16dip"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBackground"/>
+
+    </LinearLayout>
+</ScrollView>
